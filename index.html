@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAIZO — The Premier Salon & Grooming Booking Platform | Coming Soon</title>
+  <meta name="description" content="NAIZO is coming soon to Patna & Bihar. Book verified top-rated salons, spas, and professional stylists with zero waiting time and guaranteed slots. Join the VIP waitlist for ₹250 launch credit.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://naizo.in/">
+  <meta property="og:title" content="NAIZO — The Premier Salon & Grooming Experience | Coming Soon">
+  <meta property="og:description" content="Zero waiting. Verified salons. Guaranteed chairs. Bihar's first modern salon & grooming booking app is launching soon.">
+  <meta property="og:image" content="https://naizo.in/banner.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://naizo.in/">
+  <meta name="twitter:title" content="NAIZO — Premier Grooming Booking | Coming Soon">
+  <meta name="twitter:description" content="Bihar's premier salon booking platform launching soon. Join the early access waitlist.">
+  <meta name="twitter:image" content="https://naizo.in/banner.png">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'serif'],
+          },
+          colors: {
+            brand: {
+              purple: '#8B5CF6',
+              violet: '#7C3AED',
+              dark: '#08090C',
+              card: '#12131A',
+              border: 'rgba(255, 255, 255, 0.08)',
+              amber: '#F59E0B',
+              emerald: '#10B981',
+            }
+          },
+          animation: {
+            'glow-pulse': 'glowPulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            glowPulse: {
+              '0%, 100%': { opacity: '0.3', transform: 'scale(1)' },
+              '50%': { opacity: '0.6', transform: 'scale(1.05)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-panel {
+      background: rgba(18, 19, 26, 0.7);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-input {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .purple-gradient-text {
+      background: linear-gradient(135deg, #FFFFFF 20%, #DDD6FE 60%, #8B5CF6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans selection:bg-brand-violet selection:text-white antialiased overflow-x-hidden min-h-screen relative flex flex-col justify-between">
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-brand-violet/20 blur-[160px] rounded-full pointer-events-none -z-10 animate-glow-pulse"></div>
+  <div class="fixed bottom-0 right-10 w-[500px] h-[400px] bg-brand-purple/10 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 w-full glass-panel border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="primary_logo_white.png" alt="NAIZO" class="h-8 md:h-10 w-auto object-contain">
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-purple/10 border border-brand-purple/30 text-brand-purple">
+          <span class="w-2 h-2 rounded-full bg-brand-emerald animate-ping"></span>
+          Launching in Patna Soon
+        </span>
+        <a href="https://wa.me/919546059823?text=Hi%20NAIZO%20Team%2C%20I%20am%20a%20salon%20owner%20in%20Patna%20and%20want%20to%20register%20my%20salon%20for%20the%20partner%20program." 
+           target="_blank" 
+           class="px-4 py-2 text-xs md:text-sm font-semibold rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-white transition-all flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-brand-amber">storefront</span>
+          Partner With Us
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-grow">
+    <section class="max-w-6xl mx-auto px-6 pt-16 md:pt-24 pb-20 text-center relative">
+      
+      <!-- Top Pill -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase bg-gradient-to-r from-brand-violet/20 to-brand-amber/20 border border-brand-violet/40 text-purple-200 mb-8 shadow-lg shadow-brand-violet/10">
+        <span class="material-symbols-outlined text-[16px] text-brand-amber">verified</span>
+        Official NAIZO Grooming App • Phase 1 Waitlist
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8">
+        The Future of Salon Booking is <br>
+        <span class="font-serif italic text-4xl sm:text-6xl md:text-7xl font-normal purple-gradient-text">Coming to Bihar.</span>
+      </h1>
+
+      <p class="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+        Say goodbye to long waiting lines and uncertain pricing. <strong class="text-white font-semibold">NAIZO</strong> connects you with top-rated salons, luxury spas, and celebrity stylists across Patna with live queue tracking and guaranteed chair reservations.
+      </p>
+
+      <!-- Interactive Waitlist Card -->
+      <div class="max-w-xl mx-auto glass-panel p-6 sm:p-8 rounded-3xl shadow-2xl relative overflow-hidden border border-brand-violet/30">
+        <div class="absolute -top-12 -right-12 w-32 h-32 bg-brand-violet/30 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="flex items-center justify-between mb-6 border-b border-white/10 pb-4">
+          <div class="text-left">
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+              <span class="material-symbols-outlined text-brand-amber">stars</span>
+              Claim VIP Launch Access
+            </h3>
+            <p class="text-xs text-slate-400">First 500 waitlist members receive ₹250 booking wallet credit</p>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-brand-emerald/10 text-brand-emerald text-xs font-bold uppercase tracking-wider">
+            Free Early Pass
+          </span>
+        </div>
+
+        <form id="waitlist-form" onsubmit="handleWaitlist(event)" class="space-y-4">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <div class="relative flex-grow">
+              <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 material-symbols-outlined text-[20px]">call</span>
+              <input type="tel" 
+                     id="phone-input" 
+                     required 
+                     pattern="[0-9]{10}"
+                     placeholder="Enter 10-digit WhatsApp Number" 
+                     class="w-full pl-12 pr-4 py-3.5 rounded-xl glass-input text-white placeholder-slate-500 focus:outline-none focus:border-brand-violet text-sm transition-all">
+            </div>
+            <button type="submit" 
+                    class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-brand-violet to-brand-purple text-white font-bold text-sm hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-brand-violet/30 whitespace-nowrap flex items-center justify-center gap-2">
+              <span>Get VIP Invite</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </button>
+          </div>
+          <p id="success-msg" class="hidden text-xs text-brand-emerald font-semibold pt-1">
+            🎉 You're on the list! Opening WhatsApp to send your VIP early access badge...
+          </p>
+        </form>
+
+        <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-around text-xs text-slate-400">
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-brand-emerald text-[16px]">check_circle</span>
+            <span>Zero Queue Wait</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-brand-emerald text-[16px]">check_circle</span>
+            <span>Verified Salons</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-brand-emerald text-[16px]">check_circle</span>
+            <span>Instant Confirmation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16 text-center">
+        <div class="glass-panel p-5 rounded-2xl">
+          <div class="text-2xl md:text-3xl font-extrabold text-white mb-1">50+</div>
+          <div class="text-xs text-slate-400 font-medium">Patna Salons Onboarding</div>
+        </div>
+        <div class="glass-panel p-5 rounded-2xl">
+          <div class="text-2xl md:text-3xl font-extrabold gold-gradient-text mb-1">₹250</div>
+          <div class="text-xs text-slate-400 font-medium">Welcome Booking Credit</div>
+        </div>
+        <div class="glass-panel p-5 rounded-2xl">
+          <div class="text-2xl md:text-3xl font-extrabold text-brand-emerald mb-1">0 Mins</div>
+          <div class="text-xs text-slate-400 font-medium">Chair Waiting Time</div>
+        </div>
+        <div class="glass-panel p-5 rounded-2xl">
+          <div class="text-2xl md:text-3xl font-extrabold text-brand-purple mb-1">100%</div>
+          <div class="text-xs text-slate-400 font-medium">Verified Hygiene Standards</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Experience Bento Grid -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold tracking-widest uppercase text-brand-purple block mb-2">The NAIZO Standard</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Engineered for Your Convenience</h2>
+        <p class="text-sm text-slate-400 mt-3">We are transforming how Patna grooms with technology and verified standards.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="glass-panel p-8 rounded-3xl relative group hover:border-brand-violet/50 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-brand-violet/10 border border-brand-violet/20 flex items-center justify-center text-brand-purple mb-6">
+            <span class="material-symbols-outlined text-[26px]">hourglass_top</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Live Chair & Queue Tracking</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            See your exact queue status in real-time on your phone. Arrive at the salon exactly when your barber or stylist is ready for you.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-panel p-8 rounded-3xl relative group hover:border-brand-amber/50 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-brand-amber/10 border border-brand-amber/20 flex items-center justify-center text-brand-amber mb-6">
+            <span class="material-symbols-outlined text-[26px]">receipt_long</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Transparent Menu Pricing</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            No unexpected add-ons or bill inflation. Browse detailed rate cards for haircuts, beard styling, facials, and hair treatments in advance.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-panel p-8 rounded-3xl relative group hover:border-brand-emerald/50 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-brand-emerald/10 border border-brand-emerald/20 flex items-center justify-center text-brand-emerald mb-6">
+            <span class="material-symbols-outlined text-[26px]">verified</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Audited Hygiene & Stylists</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Every salon on NAIZO undergoes physical hygiene checks and client review audits before getting approved for public bookings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patna Neighborhoods Tag Cloud -->
+    <section class="max-w-5xl mx-auto px-6 py-12 text-center">
+      <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6">Launching First Across Top Patna Neighborhoods</h3>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="px-4 py-2 rounded-xl glass-panel text-sm font-semibold text-slate-200">📍 Boring Road</span>
+        <span class="px-4 py-2 rounded-xl glass-panel text-sm font-semibold text-slate-200">📍 Kankarbagh</span>
+        <span class="px-4 py-2 rounded-xl glass-panel text-sm font-semibold text-slate-200">📍 Bailey Road</span>
+        <span class="px-4 py-2 rounded-xl glass-panel text-sm font-semibold text-slate-200">📍 Raja Bazar</span>
+        <span class="px-4 py-2 rounded-xl glass-panel text-sm font-semibold text-slate-200">📍 Saguna More</span>
+        <span class="px-4 py-2 rounded-xl glass-panel text-sm font-semibold text-slate-200">📍 Exhibition Road</span>
+        <span class="px-4 py-2 rounded-xl glass-panel text-sm font-semibold text-slate-200">📍 Bihta</span>
+      </div>
+    </section>
+
+    <!-- Partner Banner for Salon Owners -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-brand-purple/30 bg-gradient-to-br from-brand-card via-brand-dark to-brand-card relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="max-w-xl text-left">
+          <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-amber/10 border border-brand-amber/30 text-brand-amber mb-4 inline-block">
+            For Salon, Parlour & Spa Owners
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">Own a Salon or Beauty Studio in Patna?</h2>
+          <p class="text-sm sm:text-base text-slate-400 leading-relaxed">
+            Fill your empty chairs, automate WhatsApp appointment confirmations, and acquire high-value regular clients with the NAIZO Partner Platform. Free pilot onboarding is currently open.
+          </p>
+        </div>
+        <div class="shrink-0 w-full md:w-auto text-center md:text-right">
+          <a href="https://wa.me/919546059823?text=Hi%20NAIZO%20Team%2C%20I%20am%20a%20salon%20owner%20in%20Patna.%20I%20want%20to%20apply%20for%20the%20pilot%20partner%20program." 
+             target="_blank" 
+             class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white text-brand-dark font-extrabold text-sm hover:bg-slate-200 transition-all shadow-xl">
+            <span>Apply For Free Pilot</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+          <p class="text-[11px] text-slate-500 mt-2">Zero onboarding fees for first 30 salon partners</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="glass-panel border-t border-brand-border py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div class="flex flex-col items-center md:items-start gap-2">
+        <img src="primary_logo_white.png" alt="NAIZO" class="h-7 w-auto">
+        <p class="text-xs text-slate-400">Bihar's Premier Salon & Grooming Booking Platform.</p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+        <a href="mailto:contact@naizo.in" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[16px]">mail</span>
+          contact@naizo.in
+        </a>
+        <a href="tel:+919546059823" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[16px]">call</span>
+          +91 9546059823
+        </a>
+        <span class="text-slate-500">📍 Bihta, Patna, Bihar</span>
+      </div>
+
+      <div class="text-xs text-slate-500">
+        &copy; 2026 NAIZO Technologies Pvt. Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleWaitlist(e) {
+      e.preventDefault();
+      const phone = document.getElementById('phone-input').value.trim();
+      if (!phone) return;
+
+      document.getElementById('success-msg').classList.remove('hidden');
+
+      const waMsg = `Hi NAIZO Team, I want to join the VIP Early Access Waitlist for the salon booking launch in Patna. My Phone: ${phone}`;
+      const waUrl = `https://wa.me/919546059823?text=${encodeURIComponent(waMsg)}`;
+
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+      }, 800);
+    }
+  </script>
+</body>
+</html>

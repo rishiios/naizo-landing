@@ -1,0 +1,9 @@
+{
+  "name": "naizo-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NAIZO — Premier Salon & Grooming Booking Platform Official Coming Soon Landing Page",
+  "scripts": {
+    "start": "serve ."
+  }
+}
